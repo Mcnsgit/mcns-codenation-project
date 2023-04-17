@@ -2,29 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>McNasty Creative Digital Studios </title>
+    <title>McNasty Creative Digital Studios - Contact Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;900&display=swap" rel="stylesheet">
-</head>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>McNasty Digital Creative Studio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;600;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <div class="logo-container">
             <a href="index.html">
-                <img src="images/mcns-logo.jpg" alt="mcnasty digital creative studio logo"></a>
+                <img src="mcns-logo.jpg" alt="mcnasty digital creative studio logo"></a>
         </div>
         <nav class="menu">
             <div class="dropdown">
@@ -40,7 +31,22 @@
         </nav>
     </header>
 <body>
-
+    <main>
+        <section class="contact-us">
+            <h1>Contact Us</h1>
+            <form action="submit-contact-form.php" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
 
 
 </body>
@@ -51,17 +57,17 @@
             <form>
                 <input type="email" placeholder="Enter your email">
                 <button type="submit">Subscribe</button>
-                <a href="contact.html">Contact Us</a>
             </form>
         </div>
         <div class="policies">
         <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
         <a href="shipping_policy.html">Shipping Policy</a>
+        <a href="contact.html">Contact Us</a>
         </div>
         <div class="social-media">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com/mcnastystudios" target="https://facebook.com/mcnastystudios" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://Pinterest.com/mcnastystudio" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest"></i></a>
+            <a href="http://mcnastystudio.com/" target="http://mcnastystudio.com/" rel="mcnastystudio.com"><i class="fab fa-mcnastystudio"></i></a>
         </div>
     </div>
 </footer>
