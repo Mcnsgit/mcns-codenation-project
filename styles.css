@@ -188,23 +188,32 @@ nav {
 
 
 /*================== main page Recent Projects Section========================== */
-.recent-projects h2 {
+.projects-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects-gallery h2 {
     margin-bottom: 1.5rem;
     font-size: 2rem;
 }
 
-@media screen and (max-width: 768px) {
-    .hero-text {
-        font-size: 1.2rem;
-        padding: 0.5rem;
-    }
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
 
-    .recent-projects h2 {
+@media screen and (max-width: 768px) {
+    .projects-gallery h2 {
         font-size: 1.5rem;
         margin-bottom: 1rem;
     }
 
-    .projects-gallery {
+    .projects-gallery-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 0.5rem;
     }
@@ -348,7 +357,7 @@ nav.menu-mobile {
     background-color: #FFC93C;
     border: 2px solid #ddd;
     border-radius: 4px;
-    display:;
+    display:flex ;
     position: relative;
     padding: 1rem;
     margin: 1rem;
@@ -430,7 +439,7 @@ nav.menu-mobile {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     cursor: pointer;
     position: relative;
 }
@@ -446,7 +455,8 @@ nav.menu-mobile {
     margin-bottom: 1rem;
     object-fit: cover;
 }
-.hidden-image {
+
+.project-box .hidden-image {
     display: none;
 }
 
@@ -454,209 +464,8 @@ nav.menu-mobile {
     margin-bottom: 1rem;
 }
 
-.expanded {
+.project-box.expanded {
     width: 100%;
     z-index: 10;
 }
-.expanded .hidden-image {
-    display: block;
-    margin-top: 1rem;
-}
-/*==================*/
-/* .project-box {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
 
-.project-box h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box img {
-    width: 100%;
-    height: calc(100% - auto);
-    display: block;
-    padding: 1rem 0.5;
-    margin-bottom: 1rem;
-    content: url(images/Buildings-5.png); */
-/* }
-
-.project-box p {
-    margin-bottom: 1;
-} */
-/* ----------------*
-.project-box0 {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-box0 h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box0 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.project-box0 p {
-    margin-bottom: 0;
-}
-.project-box0 {
-    content: url(images/fashion03.jpeg);
-    width:50%;
-    }
-.project-box1 {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-box1 h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box1 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.project-box1 p {
-    margin-bottom: 0;
-}
-.project-box1{
-    content: url(images/Branding26.jpeg)
-    }
-.project-box2 {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-box2 h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box2 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.project-box2 p {
-    margin-bottom: 0;
-}
-.project-box2{
-    content: url(images/Branding26.jpeg)
-    }
-.project-box3 {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-box3 h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box3 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.project-box3 p {
-    margin-bottom: 0;
-}
-.project-box3 {
-    content: url(images/Branding26.jpeg)
-    }
-.project-box4 {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-box4 h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box4 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.project-box4 p {
-    margin-bottom: 0;
-}
-.project-box4{
-    content: url(images/Branding26.jpeg)
-    }
-
-
-
-
-.project-box5 {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-box5 h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box5 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.project-box5 p {
-    margin-bottom: 0;
-}
-.project-box5{
-    content: url(images/Branding26.jpeg)
-    }
-.project-box6 {
-    padding: 1rem;
-    background-color: #f4f4f4;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project-box6 h3 {
-    margin-bottom: 0.5rem;
-}
-
-.project-box6 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.project-box6 p {
-    margin-bottom: 0;
-}
-.project-box6{
-    content: url(images/Branding26.jpeg)
-    }
