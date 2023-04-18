@@ -1,3 +1,4 @@
+// Vanilla JavaScript for the random projects gallery
 window.addEventListener('DOMContentLoaded', async () => {
     const projectsGalleryGrid = document.querySelector('.projects-gallery-grid');
     const response = await fetch('projects.json');
@@ -6,7 +7,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     for (let i = 0; i < 6; i++) {
       const randomIndex = Math.floor(Math.random() * projectsData.length);
-    RandomProjects.push(projectsData[randomIndex]);
+    randomProjects.push(projectsData[randomIndex]);
     projectsData.splice(randomIndex, 1);
     }
 
@@ -21,16 +22,16 @@ window.addEventListener('DOMContentLoaded', async () => {
     });
 });
 
-
+  // jQuery for project box click behavior
 $(document).ready(function () {
     $(".project-box").on("click", function () {
-        if ($(this).hasClass("expanded")) {
-            $(this).removeClass("expanded");
-            $(this).find(".hidden-image").hide();
-        } else {
-            $(".project-box.expanded").removeClass("expanded").find(".hidden-image").hide();
-            $(this).addClass("expanded");
-            $(this).find(".hidden-image").show();
-        }
+    if ($(this).hasClass("expanded")) {
+        $(this).removeClass("expanded");
+        $(this).find(".hidden-image").hide();
+    } else {
+        $(".project-box.expanded").removeClass("expanded").find(".hidden-image").hide();
+        $(this).addClass("expanded");
+        $(this).find(".hidden-image").show();
+    }
     });
 });
