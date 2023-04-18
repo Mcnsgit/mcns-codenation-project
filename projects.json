@@ -1,0 +1,27 @@
+[
+    {
+    "title": "McNasty Studios",
+    "image": "mcns-web-2.jpeg",
+    "alt": "McNasty Studios Thumbnail"
+    },
+    {
+    "title": "Northern Lights",
+    "image": "northern-lights-2.jpeg",
+    "alt": "Northern Lights Thumbnail"
+    },
+    {
+    "title": "Novi Digital",
+    "image": "novi1.jpeg",
+    "alt": "Novi Digital Thumbnail"
+    },
+    {
+    "title": "Python based game",
+    "image": "game3.jpeg",
+    "alt": "Website Building Thumbnail"
+    },
+    {
+    "title": "Website Building",
+    "image": "website1.jpeg",
+    "alt": "Website Building Thumbnail"
+    }
+]
